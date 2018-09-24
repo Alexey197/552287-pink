@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Даньев](https://up.htmlacademy.ru/adaptive/15/user/552287).
-* Наставник: `Неизвестно`.
+* Наставник: Андрей Грачев.
 
 ---
 
