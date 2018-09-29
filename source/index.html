@@ -7,11 +7,10 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <ul class="main-nav__list top-list">
-          <li class="top-list__item"><a href="#"><img class="top-list__pic top-list__pic--logo" src="#"></a></li>
-          <li class="top-list__item"><a href="#"><img class="top-list__pic top-list__pic--cross" src="#"></a></li>
-          <li class="top-list__item"><a href="#"><img class="top-list__pic top-list__pic--burger" src="#"></a></li>
-        </ul>
+        <a href="#" class="main-nav__logo">
+          <img src="#" class="main-nav__image-logo">
+        </a>
+          <button class="main-nav__toggle" type="button"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
           <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
@@ -19,6 +18,25 @@
           <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
         </ul>
       </nav>
+      <button class="page-header__toggle" type="button">Скачать приложение</button>
+      <ul class="page-header__store-list">
+        <li class="store-list__item">
+          <a href="#" class="store-list__link">
+            <img class="store-list__image" src="#">
+          </a>
+        </li>
+        <li class="store-list__item">
+          <a href="#" class="store-list__link">
+            <img class="store-list__image" src="#">
+          </a>
+        </li>
+        <li class="store-list__item">
+          <a href="#" class="store-list__link">
+            <img class="store-list__image" src="#">
+          </a>
+        </li>
+      </ul>
+      <p class="page-header__text">Доступно для iPhone, Android, Windows Phone, OS X, Windows 8</p>
     </header>
 
   </body>
