@@ -1,10 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HTML Academy: Пинк</title>
 </head>
 <body>
+  <header class="page-header form-header">
+    <nav class="main-nav">
+      <a href="#" class="main-nav__logo">
+        <img src="#" class="main-nav__image-logo">
+      </a>
+      <button class="main-nav__toggle" type="button"></button>
+      <ul class="page-header__list main-nav__list">
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+      </ul>
+    </nav>
+    <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </header>
+  <main class="form-main">
+    <section class="user-content">
+      <p class="user-content__text">Поделитесь своей историей и получите шинс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</p>
+      <form class="group group__form" action="#" method="get" >
+        <fieldset class="group__set group__set--name">
+          <legend class="visually hidden">данные пользователя</legend>
+          <p class="group__item">
+            <label class="group__label group__label--name" for="first-name"></label>
+            <input class="group__input" type="text" name="first-name" id="first-name" placeholder="Укажите фамилию *">
+          </p>
+          <p class="group__item">
+            <label class="group__label group__label--name" for="surname"></label>
+            <input class="group__input" type="text" name="surname" id="surname" placeholder="Введите ваше имя *">
+          </p>
+          <p class="group__item">
+            <label class="group__label group__label--name" for="patronymic"></label>
+            <input class="group__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже *">
+          </p>
+        </fieldset>
+        <fieldset class="group__set group__set--travel">
+          <legend class="group__title group__title---travel">Ваши безбашенные достижения в путешествии</legend>
+          <p class="c">
+            <label class="group__label group__label--travel" for="check-1">Сделал селфи с акулой</label>
+            <input class="group__input" type="checkbox" name="check-1" id="check-1" checked>
+          </p>
+          <p class="group__item">
+            <label class="group__label group__label--travel" for="check-2">Обгорел на пляже</label>
+            <input class="group__input" type="checkbox" name="check-2" id="check-2" checked>
+          </p>
+          <p class="group__item">
+            <label class="group__label group__label--travel" for="check-3">Видел Чак Норриса</label>
+            <input class="group__input" type="checkbox" name="check-3" id="check-3">
+          </p>
+          <p class="group__item">
+            <label class="group__label group__label--travel" for="check-4">Накупил сувениров</label>
+            <input class="group__input" type="checkbox" name="check-4" id="check-4">
+          </p>
+          <p class="group__item">
+            <label class="group__label group__label--travel" for="check-5">Удержал башню</label>
+            <input class="group__input" type="checkbox" name="check-5" id="check-5" checked>
+          </p>
+          <p class="group__item">
+            <label class="group__label group__label--travel" for="check-6">Разгромил отель</label>
+            <input class="group__input" type="checkbox" name="check-6" id="check-6">
+          </p>
+        </fieldset>
+        <fieldset class="group__set group__set--info">
+          <legend class="visually-hidden">Контактные данные</legend>
+          <p class="group__item">
+            <label class="group__label group__label--info" for="phone-number">номер телефона</label>
+            <input class="group__input" id="phone-number" placeholder="Номер, пожалуйста">
+          </p>
+          <p class="group__item">
+            <label class="group__label group__label--info" for="email-address">адрес почты</label>
+            <input class="group__input" id="email-address" placeholder="Введите почту *">
+          </p>
+        </fieldset>
+        <fieldset class="group__set group__set--radio">
+          <legend class="group__title group__title--radio">С каким приложением путешествовали?</legend>
+          <p class="group__item">
+            <label class="group__label group__label--radio"  for="radio-1">Pink для iOS</label>
+            <input class="group__input" type="radio" name="radio-1" id="radio-1" checked>
+          </p>
+          <p class="group__item">
+            <label class="group__label group__label--radio"  for="radio-2">Pink на Android</label>
+            <input class="group__input" type="radio" name="radio-2" id="radio-2">
+          </p>
+          <p class="group__item">
+            <label class="group__label group__label--radio"  for="radio-3">Windows Phone</label>
+            <input class="group__input" type="radio" name="radio-3" id="radio-3">
+          </p>
+        </fieldset>
+        <fieldset class="group__set group__set--desc">
+          <legend class="visually-hidden"></legend>
+          <label class="group__label group__label--desc" for="description">опишите свои эмоции</label>
+          <textarea class="group__input" name="description" id="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <button class="btn btn__group" type="submit">отправить форму</button>
+        <p class="group__req">* &mdash; обязательные поля</p>
+      </form>
+    </section>
 
+  </main>
 </body>
 </html>
