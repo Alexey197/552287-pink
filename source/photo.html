@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <header class="page-header">
+    <nav class="main-nav">
+      <a href="#" class="main-nav__logo">
+        <img class="main-nav__image-logo" src="#" alt="Pink">
+      </a>
+      <button class="main-nav__button" type="button"></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+        <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active">Фотографии</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+      </ul>
+    </nav>
+    <h1 class="page-header__title">Фотографии пользователей</h1>
+  </header>
+<main class="photo-main">
+  <section class="gallery">
+    <h2 class="visually-hidden">Галерея фото пользователей</h2>
+    <p class="gallery__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <ul class="gallery__list">
+      <li class="gallery__item gallery__item--panorama">
+        <span class="gallery__label">панорама дня</span>
+        <a class="gallery__link">
+          <img class="gallery__image" src="#" alt="Фото">
+        </a>
+        <p class="gallery__name">Анна
+          <span class="gallery__time">(5 минут назад)</span>
+        </p>
+        <p class="gallery__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+        <p class="gallery__like">
+          <span class="gallery__count">нравится: 215</span>
+          <button class="gallery__button" type="button">Сердечко</button>
+        </p>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__link">
+          <img class="gallery__image" src="#" alt="Фото">
+        </a>
+        <p class="gallery__name">Левон
+          <span class="gallery__time">(5 часов назад)</span>
+        </p>
+        <p class="gallery__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+        <p class="gallery__like">
+          <span class="gallery__count">нравится: 356</span>
+          <button class="gallery__button" type="button">Сердечко</button>
+        </p>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__link">
+          <img class="gallery__image" src="#" alt="Фото">
+        </a>
+        <p class="gallery__name">Антон
+          <span class="gallery__time">(12 часов назад)</span>
+        </p>
+        <p class="gallery__description">Соседи будут рады!</p>
+        <p class="gallery__like">
+          <span class="gallery__count">нравится: 666</span>
+          <button class="gallery__button" type="button">Сердечко</button>
+        </p>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__link">
+          <img class="gallery__image" src="#" alt="Фото">
+        </a>
+        <p class="gallery__name">Борис
+          <span class="gallery__time">(20 часов назад)</span>
+        </p>
+        <p class="gallery__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+        <p class="gallery__like">
+          <span class="gallery__count">нравится: 215</span>
+          <button class="gallery__button" type="button">Сердечко</button>
+        </p>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__link">
+          <img class="gallery__image" src="#" alt="Фото">
+        </a>
+        <p class="gallery__name">Сергей
+          <span class="gallery__time">(25 часов назад)</span>
+        </p>
+        <p class="gallery__description">Самая кубанская в мире!</p>
+        <p class="gallery__like">
+          <span class="gallery__count">нравится: 4</span>
+          <button class="gallery__button" type="button">Сердечко</button>
+        </p>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__link">
+          <img class="gallery__image" src="#" alt="Фото">
+        </a>
+        <p class="gallery__name">Максим
+          <span class="gallery__time">(40 часов назад)</span>
+        </p>
+        <p class="gallery__description">Где снег-то?</p>
+        <p class="gallery__like">
+          <span class="gallery__count">нравится: 150</span>
+          <button class="gallery__button" type="button">Сердечко</button>
+        </p>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__link">
+          <img class="gallery__image" src="#" alt="Фото">
+        </a>
+        <p class="gallery__name">Надежда
+          <span class="gallery__time">(45 часов назад)</span>
+        </p>
+        <p class="gallery__description">Всем GM и взаимные лайки!</p>
+        <p class="gallery__like">
+          <span class="gallery__count">нравится: 2560</span>
+          <button class="gallery__button" type="button">Сердечко</button>
+        </p>
+      </li>
+    </ul>
+    <p class="gallery__advice">Затми их всех! Выкладывайте все, что накопилось в телефоне!</p>
+  </section>
+  <section class="post">
+    <h2 class="visually-hidden">Запостите фото</h2>
+    <form class="post__form"  action="#" method="get">
+      <label class="visually-hidden" for="photo-add"></label>
+      <input class="post__input" type="file" id="photo-add">
+      <ul class="post__list photo-edit">
+        <li class="photo-edit__item">
+          <button class="post__button post__button--size" type="button"></button>
+        </li>
+        <li class="photo-edit__item">
+          <button class="post__button post__button--fill" type="button"></button>
+        </li>
+        <li class="photo-edit__item">
+          <button class="post__button post__button--color" type="button"></button>
+        </li>
+      </ul>
+      <div class="range"></div>
+      <button class="btn  range__button range__button--submit" type="submit">Запостить</button>
+      <button class="btn  range__button range__button--reset" type="reset">Отмена</button>
+    </form>
+  </section>
+</main>
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="index.html">
+      <img class="page-footer__image" src="#" alt="Pink">
+    </a>
+    <ul class="page-footer__list social-media">
+      <li class="social-media__item">
+        <a class="social-media__link social-media__link--tw">Твиттер</a>
+      </li>
+      <li class="social-media__item">
+        <a class="social-media__link social-media__link--fb">Фейсбук</a>
+      </li>
+      <li class="social-media__item">
+        <a class="social-media__link social-media__link--youtube">Ютуб</a>
+      </li>
+    </ul>
+    <p class="page-footer__text">Разработано</p>
+    <a class="page-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive"><img class="page-footer__logo-image" src="#" alt="Htm"></a>
+  </footer>
+</body>
+</html>
