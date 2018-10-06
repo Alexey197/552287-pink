@@ -1,0 +1,28 @@
+.contacts__text {
+  display: flex;
+  flex-direction: column;
+  .font_config(24px, @line_height, 300, @font_family);
+  color: #283645;
+}
+
+.contacts__list {
+  width: 320px;
+  .reset();
+}
+
+.contacts__description {
+  .font_config(18px, @line_height, 700, @font_family);
+  color: #283645;
+  text-align: center;
+}
+
+.contacts__data {
+  .font_config(24px, @line_height, 300, @font_family);
+  color: #d22856;
+}
+
+.contacts__map {
+  height: 200px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-position: 0 330px;
+}
