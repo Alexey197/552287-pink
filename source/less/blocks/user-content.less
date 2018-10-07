@@ -10,13 +10,21 @@
 }
 
 .group__label {
-  .font_config(@font_size, @line_height, @font_weight, @font_family);
+  .font_config(@font_size, 18px, @font_weight, @font_family);
   color: #d22856;
   text-transform: uppercase;
 }
 
 .group__item {
   .reset();
+}
+
+.group__item--travel:not(:last-of-type) {
+  padding-bottom: 64px;
+}
+
+.group__item--radio:not(:last-of-type) {
+  padding-bottom: 58px;
 }
 
 .group__item--name {
@@ -45,11 +53,11 @@
   background-color: #f2f2f2;
 }
 
-.group__title---travel,
-.group__title--radio {
-  .font_config(18px, 18px, @font_weight, @font_family);
+.group__title {
+  .font_config (14px, 18px, @font_weight, @font_family);
   color: #d22856;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .group__label--travel,
@@ -121,6 +129,25 @@
   display: block;
 }
 
-.group__label--travel {
-  padding-bottom: 162px;
+.group__input--desc {
+  min-height: 200px;
+}
+
+.group__button {
+  background-color: #2aab6d;
+}
+
+.button--submit {
+  border: 2px solid #2aab6d;
+  background-color: #2aab6d;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.group__star {
+  color: #d22856;
+}
+
+.group__req {
+  .font_config(@font_size, @line_height, @font_weight, @font_family)
 }
