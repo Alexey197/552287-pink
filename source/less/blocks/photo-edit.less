@@ -1,0 +1,23 @@
+.photo-edit {
+  .ul_config();
+  display: flex;
+  justify-content: center;
+}
+
+.post__button {
+  .btn-reset();
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  &:active,
+  &--active {
+    .btn-reset();
+    opacity: 1;
+    fill: #d22856;
+  }
+}

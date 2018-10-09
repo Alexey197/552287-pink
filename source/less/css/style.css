@@ -1,0 +1,13 @@
+.range__button {
+  height: 55px;
+  line-height: 55px;
+}
+.range__button--submit {
+  color: #d22856;
+  border: 3px solid #d22856;
+}
+.range__button--reset {
+  color: #283645;
+  border: 3px solid #283645;
+  opacity: 0.1;
+}
