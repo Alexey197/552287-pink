@@ -1,0 +1,19 @@
+.reviews__item:nth-of-type(2),
+.reviews__item:nth-of-type(3) {
+  display: none;
+}
+
+.reviews__origin,
+.reviews__text {
+  .reset();
+  text-align: center;
+}
+
+.reviews__origin {
+  .font_config(18px, 30px, 700, @font_family);
+  font-style: normal;
+}
+
+.reviews__text {
+  .font_config(@font_size, @line_height, 400, @font_family);
+}
