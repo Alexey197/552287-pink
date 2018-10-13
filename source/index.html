@@ -65,14 +65,14 @@
           </a>
         </li>
         <li class="top-menu__item">
-          <button class="main-nav__button" type="button">
+          <button class="main-nav__button main-nav__button--cross" type="button">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
               <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
             </svg>
           </button>
         </li>
         <li class="top-menu__item">
-          <button class="main-nav__button" type="button">
+          <button class="main-nav__button main-nav__button--burger" type="button">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
                 <g id="miu">
                   <g id="editor_list_view_hambuger_menu_glyph">
@@ -97,6 +97,7 @@
     </div>
   </nav>
   <div class="page-header__download">
+    <h2 class="page-header__title">Взгляните на жизнь иначе!</h2>
     <a class="page-header__link button" href="#">Скачать приложение</a>
     <ul class="page-header__store-list store-list">
       <li class="store-list__item">
@@ -129,34 +130,41 @@
         </a>
       </li>
     </ul>
+    <p class="page-header__text">Доступно для iPhone, Android, Windows Phone, OS X, Windows 8</p>
   </div>
-  <p class="page-header__text">Доступно для iPhone, Android, Windows Phone, OS X, Windows 8</p>
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">Приложение Pink</h1>
-  <div class="offer">
+  <div class="page-main__offer offer">
     <p class="offer__text">Устали от серости мегаполиса?</p>
     <p class="offer__text">Нам есть, что вам предложить!</p>
   </div>
-  <ul class="advantages">
-    <li class="advantages__item">
+  <ul class="page-main__advantages advantages">
+    <li class="advantages__item advantages__item--mood">
       <h3 class="advantages__title">Поднимает настроение</h3>
       <p class="advantages__text">Приложение позводит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
     </li>
-    <li class="advantages__item">
+    <li class="advantages__item advantages__item--changes">
       <h3 class="advantages__title">Меняет мир вокруг</h3>
       <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы украсить эффект</p>
     </li>
-    <li class="advantages__item">
+    <li class="advantages__item advantages__item--friends">
       <h3 class="advantages__title">Заводит новых друзей</h3>
       <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
     </li>
   </ul>
+  <div class="page-main__effect effect">
+    <h3 class="effect__title">Эффект на 24 часа!</h3>
+    <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования
+      приложения длится целые сутки!</p>
+    <a class="effect__link" href="#">Узнать больше об исследовании</a>
+  </div>
   <section class="reviews">
     <h2 class="visually-hidden">Отзывы пользователей</h2>
-    <div class="reviews">
+    <div class="reviews__wrapper">
       <blockquote class="reviews__item">
         <cite class="reviews__origin">Николай Петров</cite>
+        <p class="reviews__appeared">25м лет, водитель трамвая</p>
         <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взгянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
       </blockquote>
       <blockquote class="reviews__item">
@@ -176,52 +184,94 @@
   </section>
   <section class="price">
     <h2 class="visually-hidden"></h2>
+    <div class="price__wrapper">
     <table class="price__list">
       <thead>
       <tr>
-        <th class="price__head"></th>
-        <th class="price__head">
+        <th class="visually-hidden"></th>
+        <th class="price__head price__head--base">
+          <span class="price__description price__description--title">база</span>
+          <span class="price__description price__description--value">1,99 usd</span>
+        </th>
+        <th class="price__head price__head--standard">
           <span class="price__description price__description--title">стандарт</span>
           <span class="price__description price__description--value">3,99 usd</span>
         </th>
-        <th class="price__head"></th>
+        <th class="price__head price__head--unlimited">
+          <span class="price__description price__description--title">анлим</span>
+          <span class="price__description price__description--value">9,99 usd</span>
+        </th>
       </tr>
+      </thead>
       <tr>
-        <td class="price__field"></td>
+        <td class="price__field price__field--appeared">
+          <span class="price__text price__text--appeared">розовый фильтр</span>
+        </td>
+        <td class="price__field price__field--base">
+          <svg class="price__image price__image--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+              <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+          </svg>
+        </td>
         <td class="price__field price__field--col-2">
           <span class="price__text">розовый фильтр</span>
           <svg class="price__image price__image--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
               <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-            </svg>
+          </svg>
         </td>
-        <td class="price__field"></td>
+        <td class="price__field price__field--unlimited">
+          <svg class="price__image price__image--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+              <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+          </svg>
+        </td>
       </tr>
       <tr>
-        <td class="price__field"></td>
+        <td class="price__field price__field--appeared">
+          <span class="price__text price__text--appeared">смайлики</span>
+        </td>
+        <td class="price__field price__field--base">
+          <svg class="price__image price__image--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+              <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+          </svg>
+        </td>
         <td class="price__field price__field--col-2">
           <span class="price__text">смайлики</span>
           <svg class="price__image price__image--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
               <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-            </svg>
+          </svg>
         </td>
-        <td class="price__field"></td>
+        <td class="price__field price__field--unlimited">
+          <svg class="price__image price__image--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+              <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+          </svg>
+        </td>
       </tr>
       <tr>
-        <td class="price__field"></td>
+        <td class="price__field price__field--appeared">
+          <span class="price__text price__text--appeared">коментарии</span>
+        </td>
+        <td class="price__field price__field--base">
+          <svg class="price__image price__image--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+              <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+          </svg>
+        </td>
         <td class="price__field">
           <span class="price__text price__field--col-2">коментарии</span>
           <svg class="price__image price__image--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
               <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-            </svg>
+          </svg>
         </td>
-        <td class="price__field"></td>
+        <td class="price__field price__field--unlimited">
+          <svg class="price__image price__image--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+              <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+          </svg>
+        </td>
       </tr>
-      </thead>
     </table>
     <div class="price__slider slider">
       <button class="slider__toggle" type="button">1</button>
       <button class="slider__toggle slider__toggle--active" type="button">2</button>
       <button class="slider__toggle" type="button">3</button>
+    </div>
     </div>
   </section>
   <section class="contacts">
@@ -236,7 +286,7 @@
       <dt class="contacts__description">Пишите:</dt>
       <dd class="contacts__data">mail@htmlacademy.ru</dd>
       <dt class="contacts__description">Приезжайте в гости:</dt>
-      <dd class="contacts__data">ул. Большая Конюшенная, 19/8</dd>
+      <dd class="contacts__data contacts__data--address"><span>ул. Большая</span><span>Конюшенная, 19/8</span></dd>
     </dl>
     <div class="contacts__map"></div>
   </section>

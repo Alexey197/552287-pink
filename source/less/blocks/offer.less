@@ -1,7 +1,43 @@
 .offer__text {
-  margin: 0;
-  padding: 0;
+  .reset();
   text-align: center;
   .font_config(24px, @line_height, 300, @font_family);
-  color: #283645;
+}
+
+.page-main__offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 205px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__offer {
+    width: auto;
+    padding: 65px 0 45px;
+  }
+
+  .offer__text {
+    .font_config(40px, 40px, 300, @font_family);
+  }
+}
+
+.offer__text:last-child {
+  width: 340px;
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__offer {
+    width: auto;
+    padding: 70px 0;
+  }
+
+  .offer__text {
+    .font_config(50px, 50px, 300, @font_family);
+  }
+
+  .offer__text:last-child {
+    width: 430px;
+  }
 }
