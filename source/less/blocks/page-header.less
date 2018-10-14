@@ -11,54 +11,43 @@
 .page-header__download {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 320px;
-  padding-top: 490px;
+  padding: 490px 20px 0 20px;
+  margin: 0 auto;
 }
 
 .page-header__title {
+  .reset();
+  text-align: center;
   display: none;
 }
 
-.page-header__text {
+.form-header__title {
+  width: 236px;
   .reset();
-  .font_config(@font_size, 24px, 300, @font_family);
+  margin: 0 auto;
+  .font_config(24px, 24px, 300, @font_family);
   color: #ffffff;
+  text-align: center;
 }
 
-//.page-header__title {
-//  height: 237px;
-//  .reset();
-//  padding-top: 100px;
-//  text-align: center;
-//  .font_config(24px, @line_height, 300, @font_family);
-//  color: #ffffff;
-//}
+.page-header__text {
+  display: flex;
+  flex-direction: column;
+  .reset();
+  .font_config(@font_size, @line_height, 300, @font_family);
+  text-align: center;
+  color: #ffffff;
+}
 
 .page-header__list {
   height: 66px;
 }
 
-.main-nav__logo--tablet {
-  display: none;
-}
-
-.main-nav__logo--desktop,
-.main-nav__button--cross {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
   .page-header__list {
     height: 110px;
-  }
-
-  .main-nav__logo--tablet {
-    display: block;
-  }
-
-  .main-nav__logo--mobil,
-  .main-nav__button--cross {
-    display: none;
   }
 
   .page-header {
@@ -79,36 +68,16 @@
     .font_config(40px, @line_height, 300, @font_family);
     color: #ffffff;
   }
+
+  .form-header__title {
+    width: 475px;
+    .font_config(50px, 50px, 300, @font_family);
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 130px;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .main-nav__list {
-    display: flex;
-    justify-content: space-between;
-    width: 624px;
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-  }
-
-  .site-list__item {
-    box-shadow: none;
-  }
-
-  .main-nav__logo--tablet,
-  .main-nav__button--cross,
-  .main-nav__button--burger {
-    display: none;
-  }
-
-  .main-nav__logo--desktop {
-    display: block;
+  .form-header__title {
+    width: 755px;
+    .font_config(50px, 50px, 300, @font_family);
   }
 }
