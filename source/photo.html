@@ -89,8 +89,8 @@
           </li>
         </ul>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active" href="index.html">Главная</a></li>
-          <li class="site-list__item"><a class="site-list__link site-list__link--activ">Фотографии</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active">Фотографии</a></li>
           <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
           <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
         </ul>
@@ -107,6 +107,7 @@
         <a class="gallery__link gallery__link--panorama" href="#">
           <img class="gallery__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото">
         </a>
+        <div class="gallery__wrapper">
         <p class="gallery__name gallery__name--panorama">Анна
           <span class="gallery__time">(5 минут назад)</span>
         </p>
@@ -115,10 +116,11 @@
           <a class="gallery__heart" href="#">Сердечко</a>
           <span class="gallery__count">нравится: 215</span>
         </p>
+        </div>
       </li>
       <li class="gallery__item">
         <a class="gallery__link" href="#">
-          <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото">
+            <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото">
         </a>
         <p class="gallery__name">Левон
           <span class="gallery__time">(5 часов назад)</span>
@@ -198,6 +200,7 @@
       <p class="gallery__advice">Затми их всех! Выкладывайте все, что накопилось в телефоне!</p>
     <h2 class="visually-hidden">Запостите фото</h2>
     <form class="gallery__form post"  action="#" method="get">
+      <div class="post__wrapper">
       <label class="post__label" for="photo-add"></label>
       <input class="post__input" type="file" id="photo-add">
       <ul class="post__list photo-edit">
@@ -232,6 +235,7 @@
       </div>
       <button class="button  gallery__button gallery__button--submit" type="submit">Запостить</button>
       <button class="button  gallery__button gallery__button--reset" type="reset">Отмена</button>
+      </div>
     </form>
   </section>
 </main>
