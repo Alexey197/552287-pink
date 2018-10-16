@@ -200,7 +200,6 @@
       <p class="gallery__advice">Затми их всех! Выкладывайте все, что накопилось в телефоне!</p>
     <h2 class="visually-hidden">Запостите фото</h2>
     <form class="gallery__form post"  action="#" method="get">
-      <div class="post__wrapper">
       <label class="post__label" for="photo-add"></label>
       <input class="post__input" type="file" id="photo-add">
       <ul class="post__list photo-edit">
@@ -211,6 +210,9 @@
               <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
             </svg>
           </button>
+          <div class="gallery__range range gallery__range--sizer">
+            <button class="range__button" type="button">Уровень</button>
+          </div>
         </li>
         <li class="photo-edit__item">
           <button class="post__button post__button--fill" type="button">
@@ -220,6 +222,9 @@
               <rect y="40" width="48" height="3"/>
             </svg>
           </button>
+          <div class="gallery__range range gallery__range--fill">
+            <button class="range__button" type="button">Уровень</button>
+          </div>
         </li>
         <li class="photo-edit__item">
           <button class="post__button post__button--color" type="button">
@@ -228,11 +233,12 @@
               <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
             </svg>
           </button>
+          <div class="gallery__range range gallery__range--color">
+            <button class="range__button" type="button">Уровень</button>
+          </div>
         </li>
       </ul>
-      <div class="gallery__range range">
-        <button class="range__button" type="button">Уровень</button>
-      </div>
+      <div class="gallery__submit">
       <button class="button  gallery__button gallery__button--submit" type="submit">Запостить</button>
       <button class="button  gallery__button gallery__button--reset" type="reset">Отмена</button>
       </div>

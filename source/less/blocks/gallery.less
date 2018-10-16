@@ -105,6 +105,7 @@
 
 .gallery__button {
   height: 55px;
+  margin: 0 auto;
 }
 
 .gallery__button--submit {
@@ -116,6 +117,16 @@
   color: #283645;
   border: 3px solid #283645;
   opacity: 0.1;
+}
+
+.gallery__range {
+  position: absolute;
+  left: calc(50% - 115px);
+}
+
+.gallery__range--color,
+.gallery__range--fill {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -165,6 +176,11 @@
   .gallery__like--panorama {
     order: -1;
   }
+
+  .gallery__range--color,
+  .gallery__range--fill {
+    display: block;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -188,5 +204,9 @@
   .gallery__item:nth-of-type(3n),
   .gallery__item:nth-of-type(3n+4) {
     margin-left: 20px;
+  }
+
+  .gallery__submit {
+    display: flex;
   }
 }
