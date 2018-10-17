@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
+}
+
+.page-footer__index {
+  display: none;
 }
 
 .page-footer__text {
@@ -13,4 +18,24 @@
   background-repeat: no-repeat;
   text-indent: 200px;
   overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__index {
+    display: flex;
+  }
+
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1200px;
+    .reset();
+    padding: 0 130px;
+    margin: 0 auto;
+  }
 }

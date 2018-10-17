@@ -7,3 +7,59 @@
   background-color: inherit;
   border: none;
 }
+
+.main-nav__logo--tablet {
+  display: none;
+}
+
+.main-nav__logo--desktop,
+.main-nav__button--cross {
+  display: none;
+}
+
+.site-list__item {
+  box-shadow: 0 1px 0 #000000, 0 2px 0 rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__logo--tablet {
+    display: block;
+  }
+
+  .main-nav__logo--mobil,
+  .main-nav__button--cross {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 130px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 624px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .site-list__item {
+    box-shadow: none;
+  }
+
+  .main-nav__logo--tablet,
+  .main-nav__button--cross,
+  .main-nav__button--burger {
+    display: none;
+  }
+
+  .main-nav__logo--desktop {
+    display: block;
+  }
+}

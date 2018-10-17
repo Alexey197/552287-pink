@@ -1,13 +1,25 @@
 .contacts__text {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  .reset();
   .font_config(24px, @line_height, 300, @font_family);
+  text-align: center;
   color: #283645;
 }
 
 .contacts__list {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .reset();
+  padding: 0 20px;
+}
+
+.contacts__data--address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contacts__description {
@@ -17,6 +29,7 @@
 }
 
 .contacts__data {
+  .reset();
   .font_config(24px, @line_height, 300, @font_family);
   color: #d22856;
 }
@@ -24,5 +37,27 @@
 .contacts__map {
   height: 200px;
   background-image: url("../img/bg-map-mobile@1x.png");
-  background-position: 0 330px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% auto;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__map {
+    height: 380px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center -385px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__map {
+    height: 500px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center -310px;
+  }
 }

@@ -3,8 +3,25 @@
   display: none;
 }
 
+.reviews__wrapper {
+  padding: 0 20px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__appeared {
+  display: none;
+  .font_config(14px, @line_height, @font_weight, @font_family);
+  color: #283645;
+}
+
 .reviews__origin,
-.reviews__text {
+.reviews__text,
+.reviews__appeared {
   .reset();
   text-align: center;
 }
@@ -16,4 +33,15 @@
 
 .reviews__text {
   .font_config(@font_size, @line_height, 400, @font_family);
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__appeared {
+    display: block;
+  }
+
+  .reviews__text {
+    width: 620px;
+    order: -1;
+  }
 }

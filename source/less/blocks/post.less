@@ -1,9 +1,19 @@
+.post__list {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #ebecec;
+}
+
 .post__label {
   display: block;
   width: 280px;
   height: 374px;
+  margin: 0 auto;
   background-image: url("../img/photo-road-mobile@1x.jpg");
   background-repeat: no-repeat;
+}
+
+.post__input {
+  display: none;
 }
 
 .post__button {
@@ -21,5 +31,29 @@
     .btn-reset();
     opacity: 1;
     fill: #d22856;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .post {
+    position: relative;
+    height: 510px;
+    padding-left: 300px;
+  }
+
+  .post__label {
+    position: absolute;
+    left: 20px;
+  }
+
+  .post__list {
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post {
+    width: 940px;
+    margin: 0 auto;
   }
 }
